@@ -2,7 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Threading;
 
-namespace ConsoleApp3
+namespace Listor_Metoder
 {
     class Program
     {
