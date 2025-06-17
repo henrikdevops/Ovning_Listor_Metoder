@@ -36,10 +36,11 @@ namespace ConsoleApp3
                 switch (val)
                 {
                     case 1:
-                        Console.Write("\n\tHur många tärningar vill du rulla: ");
-                        bool inmatning = int.TryParse(Console.ReadLine(), out int antal);
+                        Console.Write("\n\tHur många tärningar vill du rulla: "); // Här frågar vi användaren hur många tärningar de vill rulla
+                        bool inmatning = int.TryParse(Console.ReadLine(), out int antal); // Här försöker vi läsa in ett heltal från användaren och spara det i variabeln antal
 
-                        if (inmatning)
+                        // Om inmatningen lyckades, så kör vi koden i if-satsen
+                        if (inmatning) 
                         {
                             for (int i = 0; i < antal; i++)
                             {
@@ -62,12 +63,13 @@ namespace ConsoleApp3
                             foreach (int tärning in tärningar) // Loopar vi igenom listan tärningar och skriver ut varje rullad tärning
                             {
                                 Console.WriteLine("\t" + tärning); //
-                                sum = tärning / 2; // Beräknar vi medelvärdet av alla tärningsrullningar
+                                int medelvärde = tärning / tärningar; // Här sparar vi varje rullad tärning i medelvärdet
+                                
                             }
                             Console.WriteLine("\n\tMedelvärdet på alla tärningsrull: " + sum); // Här ska medelvärdet skrivas ut
                         }
-
                         break;
+
                     case 3:
                         Console.WriteLine("\n\tTack för att du rullade tärning!");
                         Thread.Sleep(1000);
