@@ -31,7 +31,7 @@ namespace ConsoleApp3
                     "\t[3] Avsluta");
                 Console.Write("\tVälj: ");
                 int val;
-                int.TryParse(Console.ReadLine(), out val);
+                int.TryParse(Console.ReadLine(), out val); // Här försöker vi läsa in ett heltal från användaren och spara det i variabeln val
 
                 switch (val)
                 {
